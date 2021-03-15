@@ -18,7 +18,7 @@
 <![endif]-->
 <div class=wrapper>
     <header class=header-main>
-        <div class=header-upper>
+        <!-- <div class=header-upper>
             <div class=container>
                 <div class=row>
                     <ul>
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="header-lower clearfix">
             <div class=container>
                 <div class=row><h1 class=logo><a href=index.html><img style="height: 154px;" src=images/logoo.png alt=image></a></h1>
@@ -349,6 +349,46 @@
             </div>
         </div>
     </section> -->
+    <style>
+    @media screen and (max-width: 2000px) {
+      .playerDetails02  .prv,
+     .playerDetails02   .nxt {
+          /* display: none; */
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          height: 40px;
+          width: 40px;
+          border: 2px solid #979da0;
+          border-radius: 50%;
+          background-color: black;
+          z-index: 5; }
+          .prv:after,
+          .nxt:after {
+            position: absolute;
+            content: '';
+            font-family: FontAwesome;
+            top: 50%;
+            left: 0;
+            right: 0;
+            color: #979da0;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            line-height: 1;
+            text-align: center; }
+        .prv {
+          left: -5px; }
+          .prv:after {
+            content: '\f053'; }
+        .nxt {
+          right: -5px; }
+          .nxt:after {
+            content: '\f054'; } }
+        </style>
+
 
     <section class=playerDetails02>
         <div class=container>
@@ -424,95 +464,105 @@
         </div>
     </section>
 
+    
 
-    <section class="players homeplayer">
+
+   
+
+    <section class=players>
         <div class=container>
-            <div class=row><h2 class=heading>what we <span>do</span></h2>
-<!-- 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+            <div class=row>
+                <h2 class=heading>what we<span> do</span></h2>
+
+                <!-- <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
                     consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
                     Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p> -->
 
                 <div class="wrapplayer clearfix"><a class="prv prev-player"></a> <a class="nxt next-player"></a>
-                    <ul class="slideHeroes clearfix">
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/academy/third.jpg) class=bgimg></div>
+                    <ul class="boardmember clearfix">
+                        <li class=clearfix>
+                            <div>
+                                <div>
+                                    <div class=fig01>
+                                        <div class=memberimg
+                                             style="background:url(images/academy/third.jpg) no-repeat top center"></div>
+                                    </div>
+                                    <div class="bg-black01 fig02"><h6 class=paragraph02>Managing</h6>
+
+                                        <!-- <p class="uppercaseheading red">director</p> -->
+
+                                        <p>Assist local football players in directing, maintaining and improving their professional careers. In order to become part of CSpro Agency and experience our expert guide, please register</p></div>
+                                    <!-- <div class="bg-black fig02"> -->
+                                       <!-- <a href=""><button >View more</button></a>  -->
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Velit repellat cum necessitatibus quas magni! Qui, modi possimus.</p> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="bg-redcolor fig02"><p>BORN 14 April 1975, England</p></div> -->
                                 </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>MANAGING</span> <span>
-                                        <!-- <img src=images/academy/tShirt.png
-                                                                              alt=image> -->
-                                                                            </span></li>
-                                    <p>Assist local football players in directing, maintaining and improving their professional careers. In order to become part of CSpro Agency and experience our expert guide, please register</p>
-                                    <!-- <li class=playerInfo><span>goalkeeper</span> <span><i
-                                            class="fa fa-heart"></i>20</span></li> -->
-                                </ul>
                             </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/academy/fourth.jpg) class=bgimg></div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <div class=fig01>
+                                        <div class=memberimg
+                                             style="background:url(images/academy/fourth.jpg) no-repeat top center"></div>
+                                    </div>
+                                    <div class="bg-black01 fig02"><h6 class=paragraph02>educator</h6>
+
+                                        <!-- <p class="uppercaseheading red">ceo</p> -->
+
+                                        <p>We are mediators who negotiate changes in agreements on behalf of the players. This part of the agency’s activities will negotiate, educate and advise players regarding signing of professional contracts.</p></div>
+                                    <!-- <div class="bg-black fig02"> -->
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Velit repellat cum necessitatibus quas magni! Qui, modi possimus.</p> -->
+                                        <!-- <a href=""><button >View more</button></a> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="bg-redcolor fig02"><p>BORN 14 April 1975, England</p></div> -->
                                 </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>EDUCATORS</span> <span>
-                                        <!-- <img src=images/icons/tShirt.png
-                                                                               alt=image></span> -->
-                                                                            </li>
-                                    <!-- <li class=playinfodetails></li> -->
-                                    <p >We are mediators who negotiate changes in agreements on behalf of the players. This part of the agency’s activities will negotiate, educate and advise players regarding signing of professional contracts.</p>
-                                    <!-- <li class=playerInfo><span>DEFENDER</span> <span><i
-                                            class="fa fa-heart"></i>34</span></li> -->
-                                </ul>
                             </div>
-                        </a></li>
-                        <!-- <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/academy/fifth.jpg) class=bgimg></div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <div class=fig01>
+                                        <div class=memberimg
+                                             style="background:url(images/academy/fifth.jpg) no-repeat top center"></div>
+                                    </div>
+                                    <div class="bg-black01 fig02"><h6 class=paragraph02>opportunities</h6>
+
+                                        <!-- <p class="uppercaseheading red">ceo</p> -->
+
+                                        <p>We celebrate every opportunity we get to work together. The spirit of laughter and unity adds life to sport</p></div>
+                                    <!-- <div class="bg-black fig02"> -->
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Velit repellat cum necessitatibus quas magni! Qui, modi possimus.</p> -->
+                                        <!-- <a href=""><button >View more</button></a> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="bg-redcolor fig02"><p>BORN 14 April 1975, England</p></div> -->
                                 </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Alex Alameda</span> <span><img src=images/icons/tShirt.png
-                                                                             alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>STRIKER</span> <span><i class="fa fa-heart"></i>45</span>
-                                    </li>
-                                </ul>
                             </div>
-                        </a></li> -->
-                        <!-- <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player04.jpg) class=bgimg></div>
+                        </li>
+                        <!-- <li>
+                            <div>
+                                <div>
+                                    <div class=fig01>
+                                        <div class=memberimg
+                                             style="background:url(images/boardMember/boardMember02.jpg) no-repeat top center"></div>
+                                    </div>
+                                    <div class="bg-black01 fig02"><h6 class=paragraph02>Kenton Kidd</h6>
+
+                                        <p class="uppercaseheading red">ceo</p>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officia
+                                            labore molestias, Doloribus, aspernatur.</p></div>
+                                    <div class="bg-black fig02"><p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Velit repellat cum necessitatibus quas magni! Qui, modi possimus.</p>
+                                    </div>
+                                    <div class="bg-redcolor fig02"><p>BORN 14 April 1975, England</p></div>
                                 </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Lane Lavalley</span> <span><img src=images/icons/tShirt.png
-                                                                              alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>STRIKER</span> <span><i class="fa fa-heart"></i>45</span>
-                                    </li>
-                                </ul>
                             </div>
-                        </a></li> -->
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/academy/fifth.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>OPPORTUNITIES</span> <span>
-                                        <!-- <img src=images/icons/tShirt.png
-                                                                               alt=image></span> -->
-                                                                            </li>
-                                    <!-- <li class=playinfodetails></li> -->
-                                    <p >CSpro offers possibilities and chances for youth and talented players to switch to Europe for development.</p>
-                                    <!-- <li class=playerInfo><span>DEFENDER</span> <span><i
-                                            class="fa fa-heart"></i>34</span></li> -->
-                                </ul>
-                            </div>
-                        </a></li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -731,31 +781,17 @@
             <div class=container>
                 <div class=row><h2 class=heading>COMPANIES WE'VE <span>WORKED WITH</span></h2>
                     <ul class="client clearfix">
-                        <li><a href="#"><img style="height:120px" src=images/client/first.png alt=image></a></li>
-                        <li><a href="#"><img style="height:120px"  src=images/client/second.png alt=image></a></li>
-                        <li><a href="#"><img style="height:120px"  src=images/client/third.png alt=image></a></li>
-                        <li><a href="#"><img style="height:120px"  src=images/client/fourth.jpg alt=image></a></li>
-                        <li><a href="#"><img   src=images/client/fifth.png alt=image></a></li>
-                        <li><a href="#"><img   src=images/client/sixth.png alt=image></a></li>
-                        <li><a href="#"><img   src=images/client/seventh.png alt=image></a></li>
-                        <li><a href="#"><img  src=images/client/eight.png alt=image></a></li>
+                        <li><a href="https://keralablastersfc.in/"><img style="height:120px" src=images/client/first.png alt=image></a></li>
+                        <li><a href="https://sparta.cz/cs/"><img style="height:120px"  src=images/client/second.png alt=image></a></li>
+                        <li><a href="#"></a><img style="height:120px"  src=images/client/third.png alt=image></a></li>
+                        <li><a href="http://www.atpersonalsoccertraining.nl/"><img style="height:120px"  src=images/client/fourth.jpg alt=image></a></li>
+                        <li><a href="https://www.zuzanasafarova.cz/"><img   src=images/client/fifth.png alt=image></a></li>
+                        <li><a href="https://www.uva.nl/en"><img   src=images/client/sixth.png alt=image></a></li>
+                        <li><a href="http://ptkpartners.cz/"><img   src=images/client/seventh.png alt=image></a></li>
+                        <li><a href="https://johancruyffinstitute.com/en/"><img  src=images/client/eight.png alt=image></a></li>
                         
                         
-                    <!-- </ul>
-                    <div class=footer-container>
-                        <ul class=clearfix>
-                            <li><a href=https://www.facebook.com/templatespoint.net class=bigsocial-link><i
-                                    class="fa fa-facebook"></i></a></li>
-                            <li><a href=https://twitter.com/ class=bigsocial-link target=_blank><i
-                                    class="fa fa-twitter"></i></a></li>
-                            <li><a href=https://www.behance.net/ class=bigsocial-link target=_blank><i
-                                    class="fa fa-behance"></i></a></li>
-                        </ul>
-                       
-                        <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p></div>
-                 
-                </div>
-               -->
+                   
             </div>
          <center>  <p >22012 unit G ext Seke, Chitungwiza, Zimbabwe | Phone: +263777132993, +420739287516 WhatsApp | Email: info@CostaSportsPro.com</p> </center> 
          <center> <p >Copyright © 2020 Costa Sports Pro All Rights Reserved</p></center>  
