@@ -57,7 +57,9 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0; 
+  
+}
 
 article,
 aside,
@@ -6125,7 +6127,8 @@ h4 {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #979da0;
+  /* color: #979da0; */
+  color: white;
   font-weight: 400; }
   p.headParagraph {
     width: 80%;
@@ -6478,15 +6481,17 @@ h6 {
     .nxt:after {
       content: '\f054'; } }
 
-@media screen and (min-width: 1300px) {
+/* @media screen and (min-width: 1300px) {
   .prv {
     left: -5%; }
     .prv:after {
       content: '\f053'; }
   .nxt {
-    right: -5%; }
+    right: -5%; 
+  }
     .nxt:after {
-      content: '\f054'; } }
+      content: '\f054'; 
+    } } */
 
 @media screen and (min-width: 992px) {
   .facebook:hover {
@@ -7469,7 +7474,10 @@ h6 {
     margin-right: 40px; } }
 
 .about {
-  background-image: url(images/background/heroesBg.jpg);
+  /* background-image: url(images/background/heroesBg.jpg); */
+  background: linear-gradient(
+0deg
+,#000000 8%,#292929 89%);
 
   padding: 70px 0; }
   .about-wrap {
@@ -7483,7 +7491,8 @@ h6 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
-      color: #979da0;
+      /* color: #979da0; */
+      color: white;
       font-weight: 400; }
   .about .nav-tabs {
     border: none; }
@@ -8023,18 +8032,27 @@ ul.videoLive {
   }
 .bg-smallwhite {
   background-image: url("images/background/heroesBg.jpg");
+  background: linear-gradient(
+0deg
+,#000000 8%,#292929 89%);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
 
 .bg-black01 {
-  background: #282f37; }
+  /* background: #282f37; */
+  background: linear-gradient(
+    0deg
+    ,#000000 8%,#292929 89%);
+}
 
 .bg-lblack {
   background: #454c54; }
 
 .bg-black {
-  background: #20262d; }
+  /* background: #20262d; */
+ background: black;
+}
 
 .bg-lblack01 {
   background: #868f98; }
@@ -10165,7 +10183,10 @@ ul.slick-dots {
       padding: 10px 0; }
     .player02info p {
       padding: 10px 0;
-      color: #707b8c; }
+      /* color: #707b8c;  */
+      color: white;
+    
+    }
     .player02info a {
       display: block;
       float: right;
@@ -10177,7 +10198,10 @@ ul.slick-dots {
     .player02info ul li {
       padding-left: 20px;
       position: relative;
-      color: #707b8c; }
+      /* color: #707b8c;  */
+      color: white;
+    
+    }
       .player02info ul li:after {
         position: absolute;
         height: 6px;
@@ -10513,12 +10537,18 @@ ul.slick-dots {
   padding: 300px 0 0 0;
   width: 100%;
   position: relative;
-  background: #E8DEEA; }
+  /* background: #E8DEEA;  */
+  background: linear-gradient( 
+0deg
+ ,#000000 8%,#292929 89%);
+
+}
   .map_wrapper h2 {
     color: rgba(255, 255, 255, 0.6); }
 
 .contact_form {
   position: relative;
+  margin-top: -240px;
   padding: 100px 0;
   background: rgba(0, 0, 0, 0.75); }
 
