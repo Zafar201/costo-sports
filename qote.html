@@ -17,6 +17,8 @@
 		
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -109,17 +111,17 @@
     
     <div class="wrapper">
         <div class="inner">
-            <form method="POST" action="https://script.google.com/macros/s/AKfycby9Ij672FQfEnN2qQ1GJxKWfZoTo9m2j3rEGXNr_2vcM3yiUzmRl2WUggwKxiAfgKqJag/exec">
+            <form id="submit-form" action="">
                 <h3>QUOTE DETAILS</h3>
                 <p>Our pricing structure is unique to each business we offer. Depending on your requirements, we will build out a model that works for you.</p>
                 <label class="form-group">
                     <label>Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
                 </label>
-                <label class="form-group">
+                <!-- <label class="form-group">
                     <label>School Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter school name" name="school name">
-                </label>
+                </label> -->
                 <label class="form-group">
                     <label>Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
@@ -171,6 +173,26 @@
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycby9Ij672FQfEnN2qQ1GJxKWfZoTo9m2j3rEGXNr_2vcM3yiUzmRl2WUggwKxiAfgKqJag/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
 </html>

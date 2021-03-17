@@ -17,6 +17,8 @@
 		
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -109,7 +111,7 @@
     
     <div class="wrapper">
         <div class="inner">
-            <form method="POST" action="https://script.google.com/macros/s/AKfycby9Ij672FQfEnN2qQ1GJxKWfZoTo9m2j3rEGXNr_2vcM3yiUzmRl2WUggwKxiAfgKqJag/exec">
+            <form id="submit-form" action="">
                 <h3>JOINING OUR AGENCY</h3>
                 <p>If you are a football player from Zimbabwe interested in utilizing our expert services which includes representation and links to foreign clubs, please get in touch below and let’s discuss.</p>
                 <label class="form-group">
@@ -171,6 +173,27 @@
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycby9Ij672FQfEnN2qQ1GJxKWfZoTo9m2j3rEGXNr_2vcM3yiUzmRl2WUggwKxiAfgKqJag/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
 </html>
