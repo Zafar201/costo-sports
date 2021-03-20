@@ -5831,7 +5831,8 @@ button.close {
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  display: table; }
+  display: table; 
+}
 
 .clearfix:after {
   clear: both; }
@@ -8041,9 +8042,10 @@ ul.videoLive {
 
 .bg-black01 {
   /* background: #282f37; */
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg
-    ,#000000 8%,#292929 89%);
+    ,#000000 8%,#292929 89%); */
+    background: #111;
 }
 
 .bg-lblack {
@@ -10004,6 +10006,7 @@ a.blacklrnmore {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 38px;
     float: left; }
     @media (min-width: 992px) {
       .boardmember li {
@@ -10029,7 +10032,7 @@ a.blacklrnmore {
     padding: 0 15px;
     /* background: white; */
     /* background-image: url(images/background/heroesBg.jpg); */
-    background-color: black;
+    background-color: #111;
    }
   .achievement .fig {
     position: relative;
@@ -10168,7 +10171,7 @@ ul.slick-dots {
     padding-left: 15px;
     padding-right: 15px;
     /* background-image: url("images/background/blackblueBg.jpg"); */
-    background-color: black;
+    background-color: #111;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10177,6 +10180,7 @@ ul.slick-dots {
     @media (min-width: 992px) {
       .player02info {
         float: left;
+        height: 354px;
         width: 66.6666666667%; } }
     .player02info .oswald16 {
       color: #b81e20;
